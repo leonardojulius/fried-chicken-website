@@ -215,11 +215,18 @@ img {
     transition: color .4s;
 }
 
-.nav__close {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
+.nav__link:hover{
+    color: var(--white-color);
+
 }
+
+.nav__close {
+   position:absolute;
+   top: 1rem;
+   right: 1.5rem;
+}
+
+
 
 /* Show menu */
 
@@ -267,11 +274,44 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
+@media screen and (max-width:320px){
+
+    
+}
 
 /* For medium devices */
 
 
 /* For large devices */
+
+@media screen and (min-width: 1150px) {
+    .container{
+        margin-inline: auto;
+    }
+
+    .section{
+        padding-block: 7rem 2rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 2rem);
+    }
+
+    .nav__toggle,
+    .nav__close{
+        display: none;
+    }
+
+    .nav__menu {
+        width: initial;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+    
+}
 
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
