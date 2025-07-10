@@ -237,7 +237,7 @@ img {
 
 /* Add shadow header */
 
-.shadow-header{
+.shadow-header {
     box-shadow: 0 4px 16px hsla(0, 0%, 0%, .1);
 
 }
@@ -345,6 +345,92 @@ img {
 /*=============== ABOUT ===============*/
 
 
+.about {
+    background-color: var(--first-color);
+}
+
+
+.about__container {
+    padding-bottom: 3rem;
+    row-gap: 9rem;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__data .section__subtitle {
+    color: var(--white-color);
+}
+
+.about__description {
+    margin-bottom: 2rem;
+}
+
+.about__images {
+    position: relative;
+    justify-self: center;
+}
+
+.about__img-1 {
+    width: 280px;
+    position: relative;
+    z-index: 10;
+    filter: var(--shadow-img);
+}
+
+.about__img-2 {
+    width: 210px;
+    position: absolute;
+    top: -6.5rem;
+    right: -2rem;
+    filter: var(--shadow-img);
+}
+
+.about__tooltip-1,
+.about__tooltip-2 {
+    position: absolute;
+    display: inline-block;
+    padding: .25rem 1.5rem;
+    border-radius: .75rem;
+    font-weight: var(--font-semi-bold);
+}
+
+.about__tooltip-1{
+    background-color: var(--white-color);
+    top: -4rem;
+    left: 0;
+}
+
+.about__tooltip-2 {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    right: -3rem;
+    bottom: 3rem;
+    z-index: 10;
+}
+
+
+.about__tooltip-1::after,
+.about__tooltip-2::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    rotate: 45deg;
+    border-radius: .25rem;
+    background-color: red;
+}
+
+
+.about__tooltip-2::after{
+    left: -8px;
+    background-color: var(--back-color);
+}
+
 /*=============== ORDER ===============*/
 
 
@@ -402,6 +488,85 @@ img {
         flex-direction: row;
         column-gap: 4rem;
     }
+
+    .home__container {
+        grid-template-columns: 530px 550px;
+        align-items: center;
+        column-gap: 2rem;
+        padding-block: 8rem 3rem;
+    }
+
+    .home__data {
+        text-align: initial;
+    }
+
+    .home__title {
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 5;
+    }
+
+    .home__description {
+        margin-bottom: 3.5rem;
+        padding-right: 7.75rem;
+    }
+
+    .home__description {
+        margin-bottom: 3.5rem;
+        padding-right: 7.75rem;
+    }
+
+    .home__dam-1 {
+        width: 100px;
+        right: 10rem;
+        top: initial;
+        bottom: -1rem;
+    }
+
+    .home__dam-2 {
+        width: 120px;
+        top: -4.5rem;
+        left: -4.5rem;
+    }
+
+    .home__img{
+        width:550px;
+        position: relative;
+        z-index:5;
+    }
+
+    .home__dam-3{
+        width: 110px;
+        top: -3.5rem;
+        right: -2rem;
+    }
+
+    .home__dam-4{
+        width:110px;
+        right: 2.5rem;
+        bottom: -2.5rem;
+    }
+
+    .home__dam-5{
+        width: 150px;
+        top: initial;
+        left: -3rem;
+        bottom: 9rem;
+    }
+
+   /*  .about */
+
+   .about__container {
+    grid-template-columns: 460px 420px;
+    align-items: center;
+    column-gap: 11rem;
+   }
+
+   .about__data{
+    order: 1;
+    text-align: initial;
+    margin-bottom: 7rem;
+   }
 
 }
 
