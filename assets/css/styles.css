@@ -396,7 +396,7 @@ img {
     font-weight: var(--font-semi-bold);
 }
 
-.about__tooltip-1{
+.about__tooltip-1 {
     background-color: var(--white-color);
     top: -4rem;
     left: 0;
@@ -417,7 +417,7 @@ img {
     width: 20px;
     height: 20px;
     position: absolute;
-    top:0;
+    top: 0;
     bottom: 0;
     margin: auto 0;
     rotate: 45deg;
@@ -426,7 +426,7 @@ img {
 }
 
 
-.about__tooltip-2::after{
+.about__tooltip-2::after {
     left: -8px;
     background-color: var(--back-color);
 }
@@ -529,44 +529,77 @@ img {
         left: -4.5rem;
     }
 
-    .home__img{
-        width:550px;
+    .home__img {
+        width: 550px;
         position: relative;
-        z-index:5;
+        z-index: 5;
     }
 
-    .home__dam-3{
+    .home__dam-3 {
         width: 110px;
         top: -3.5rem;
         right: -2rem;
     }
 
-    .home__dam-4{
-        width:110px;
+    .home__dam-4 {
+        width: 110px;
         right: 2.5rem;
         bottom: -2.5rem;
     }
 
-    .home__dam-5{
+    .home__dam-5 {
         width: 150px;
         top: initial;
         left: -3rem;
         bottom: 9rem;
     }
 
-   /*  .about */
+    /*  .about */
 
-   .about__container {
-    grid-template-columns: 460px 420px;
-    align-items: center;
-    column-gap: 11rem;
-   }
+    .about__container {
+        grid-template-columns: 460px 420px;
+        align-items: center;
+        column-gap: 11rem;
+    }
 
-   .about__data{
-    order: 1;
-    text-align: initial;
-    margin-bottom: 7rem;
-   }
+    .about__data {
+        order: 1;
+        text-align: initial;
+        margin-bottom: 7rem;
+    }
+
+    .about__data :is(.section__title, .section__subtitle) {
+        text-align: initial;
+    }
+
+    .about__description {
+        margin-bottom: 3.5rem;
+    }
+
+    .about__images {
+        margin-right: 0;
+    }
+
+    .about__img-1 {
+        width: 460px;
+    }
+
+    .about__img-2 {
+        width: 360px;
+        top: -11rem;
+        right: -6.5rem;
+    }
+
+    .about__tooltip-1 {
+        font-size: var(--h3-font-size);
+        top: -5rem;
+        left: 5rem;
+    }
+
+    .about__tooltip-2 {
+        font-size: var(--h3-font-size);
+    }
+
 
 }
 
