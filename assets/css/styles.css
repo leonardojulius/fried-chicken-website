@@ -422,13 +422,19 @@ img {
     margin: auto 0;
     rotate: 45deg;
     border-radius: .25rem;
-    background-color: red;
+
 }
 
 
+
+.about__tooltip-1::after {
+    right: -8px;
+    background-color: var(--white-color);
+}
+
 .about__tooltip-2::after {
     left: -8px;
-    background-color: var(--back-color);
+    background-color: var(--black-color);
 }
 
 /*=============== ORDER ===============*/
@@ -598,7 +604,11 @@ img {
 
     .about__tooltip-2 {
         font-size: var(--h3-font-size);
+        right: -4rem;
+        bottom: 8rem;
     }
+
+
 
 
 }
